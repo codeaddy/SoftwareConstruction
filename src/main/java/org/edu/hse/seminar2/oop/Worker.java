@@ -46,9 +46,9 @@ public class Worker extends Human implements Testable {
     }
 
     @Override
-    public void eat(String[] food) {
+    public String eat(String[] food) {
         String message = Arrays.stream(food).reduce((acc, next) -> acc + ", " + next).orElse("Nothing");
-        System.out.println("Worker ate: " + message);
+        return ("Worker ate: " + message);
     }
 
     // Polymorphism

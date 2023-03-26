@@ -18,7 +18,7 @@ public abstract class Human {
 
     public abstract void walk(Double meters);
 
-    public abstract void eat(String[] food);
+    public abstract String eat(String[] food);
 
     public abstract int getAge();
 
